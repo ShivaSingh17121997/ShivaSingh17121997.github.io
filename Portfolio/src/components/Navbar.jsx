@@ -39,7 +39,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav
+    <nav id="nav-menu"
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${

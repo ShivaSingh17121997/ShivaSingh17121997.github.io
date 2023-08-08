@@ -4,7 +4,7 @@ import Port from '../assets/astronaut-g006a34463_1920.png'
 
 const Hero = () => {
   return (
-    <section className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-[#1E293B] via-[#1C2431] to-[#1B222D]">
+    <section id="home" className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-[#1E293B] via-[#1C2431] to-[#1B222D]">
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-5">
         <motion.div
           initial={{ y: -100, opacity: 0 }}
