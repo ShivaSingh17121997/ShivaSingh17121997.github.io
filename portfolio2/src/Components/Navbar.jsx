@@ -9,7 +9,7 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import Resume from "../Resume/sagar-tiwary-resume.pdf";
+import Resume from "../Resume/Shiva-Singh-Resume.pdf"
 
 const Links = [
   { title: "Home", href: "#home", class: "nav-link home" },
@@ -21,10 +21,10 @@ const Links = [
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = Resume;
-    link.download = "sagar-tiwary-resume.pdf";
+    link.download = "Shiva-Singh-Resume(3).pdf";
     link.click();
     window.open(
-      "https://drive.google.com/file/d/105KH1IGo1CoBis2qvDbXiRgyns0-QlLo/view?usp=sharing",
+      "https://drive.google.com/file/d/1EKIXL8CBHmkFKJP5pNKabqtGNu1QTGR7/view?usp=sharing",
       "_blank"
     );
   };

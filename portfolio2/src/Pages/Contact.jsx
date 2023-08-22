@@ -55,25 +55,25 @@ export default function Contact() {
               boxSize="15px"
               children={<FontAwesomeIcon icon={faPhoneVolume} />}
             />
-            <Text color="white" id="contact-phone">+91- 7970663406</Text>
+            <Text color="white" id="contact-phone">+91- 7379484942</Text>
           </HStack>
           <HStack>
             <TagLeftIcon
               boxSize="15px"
               children={<FontAwesomeIcon icon={faEnvelope} />}
             />
-            <Text id="contact-email" color="white">sagartiwary360@gmail.com</Text>
+            <Text id="contact-email" color="white">shivasingh001997@gmail.com</Text>
           </HStack>
           <HStack>
             <TagLeftIcon
               boxSize="15px"
               children={<FontAwesomeIcon icon={faLocationDot} />}
             />
-            <Text color="white">Jamshedpur, Jharkhand</Text>
+            <Text color="white">Lucknow, Uttar Pradesh</Text>
           </HStack>
           <HStack spacing={4}>
             <Box width={"30px"} postion="relative">
-              <Link id="contact-linkedin" href="https://www.linkedin.com/in/sagar-tiwary-6ba248263/">
+              <Link id="contact-linkedin" href="https://www.linkedin.com/in/shiva-singh-39b31b20b/">
                 <Image
                   width={"100%"}
                   src="https://cdn-icons-png.flaticon.com/512/2504/2504923.png"
@@ -82,7 +82,7 @@ export default function Contact() {
               </Link>
             </Box>
             <Box width={"30px"}>
-              <Link  id="contact-github" href="https://github.com/sagartiwary">
+              <Link  id="contact-github" href="https://github.com/ShivaSingh17121997">
                 <Image
                   width={"100%"}
                   src="https://cdn-icons-png.flaticon.com/512/270/270798.png"

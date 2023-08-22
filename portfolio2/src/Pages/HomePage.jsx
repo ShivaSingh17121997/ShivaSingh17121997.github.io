@@ -15,15 +15,16 @@ import {
 import TypeWritter from "../Components/TypeWritter";
 import Contact from "./Contact";
 import Project from "./Project";
-import SagarImage from "../images/sagar-tiwary.jpg";
-import Resume from "../Resume/sagar-tiwary-resume.pdf";
-  const handleDownload = () => {
+import Shiva from '../images/shiva.jpg'
+import Resume from "../Resume/Shiva-Singh-Resume.pdf"
+
+const handleDownload = () => {
     const link = document.createElement("a");
     link.href = Resume;
-    link.download = "sagar-tiwary-resume.pdf";
+    link.download = "Shiva-Singh-Resume(3).pdf";
     link.click();
     window.open(
-      "https://drive.google.com/file/d/105KH1IGo1CoBis2qvDbXiRgyns0-QlLo/view?usp=sharing",
+      "https://drive.google.com/file/d/1EKIXL8CBHmkFKJP5pNKabqtGNu1QTGR7/view?usp=sharing",
       "_blank"
     );
   };
@@ -44,7 +45,7 @@ const HomePage = () => {
                 <Box display={"flex"} gap={2}>
                   <Text color={"blue.400"}> Hey, </Text>{" "}
                   <Text color={"red"} id="user-detail-name">
-                    I'm Sagar
+                    I'm Shiva
                   </Text>
                 </Box>
               </Text>
@@ -84,7 +85,7 @@ const HomePage = () => {
             className="home-img"
             objectFit={"cover"}
             h={["250px", "300px", "350px"]}
-            src={SagarImage}
+            src={Shiva}
             borderRadius={"5%"}
           />
         </Flex>
