@@ -12,21 +12,21 @@ import {
   HStack,
 } from "@chakra-ui/react";
 import React from "react";
-import Doctor from "../images/doctor.png";
-import India from "../images/india.jpg";
-import Github from "../images/github.png";
-import Uber from "../images/uber.png";
+// import Doctor from "../images/doctor.png";
+ import Student from "../images/student.png";
+import gadget from "../images/gadget.png";
+import Recipi from "../images/Recipi-fit.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLifeRing } from "@fortawesome/free-regular-svg-icons";
 const projectsArray = [
   {
-    logo: Uber,
-    title: "Savari App",
-    github: "https://github.com/Gauravshukla82/ambiguous-oven-8467",
-    live_Link: "https://savariapp.netlify.app/",
+    logo: Recipi,
+    title: "Recipe Snap",
+    github: "https://github.com/ErGopiVishwakarma/RecipeFit",
+    live_Link: "https://recipefit.vercel.app/",
     description:
-      "Uber is a transportation company with an app that allows passengers to hail a ride and drivers to charge fares and get paid. More specifically, Uber is a ridesharing company that hires independent contractors as drivers.",
+      "RecipeSnap is a delightful and interactive recipe website aims to inspire food enthusiasts by providing a user-friendly platform to explore, share, and discover a diverse range of mouthwatering recipes.",
     techStack: [
       {
         image:
@@ -50,44 +50,45 @@ const projectsArray = [
       },
     ],
   },
+  // {
+    // logo: Doctor,
+  //   title: "Healthcare Department",
+  //   github:
+  //     "https://github.com/ShivaSingh17121997/violent-hope-9407-",
+  //   live_Link: "curious-liger-54058d.netlify.app/",
+  //   description:
+  //     "Camera lelo is a leading e-commerce website that specializes in providing high-quality photography and video equipment to professionals, enthusiasts, and hobbyists alike. The website offers a wide range of products, including cameras, lenses, tripods, lighting equipment, accessories, and more.",
+  //   techStack: [
+  //     {
+  //       image:
+  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+  //       link: "https://react.dev",
+  //     },
+  //     {
+  //       image:
+  //         "https://dgdeepon.github.io/static/media/chakra-ui_title2-400x400-removebg-preview.fc0f93596462cd01a157.png",
+  //       link: "https://chakra-ui.com",
+  //     },
+  //     {
+  //       image:
+  //         "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+  //       link: "https://redux.js.org",
+  //     },
+  //     {
+  //       image:
+  //         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  //       link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  //     },
+  //   ],
+  // },
+  
   {
-    logo: Doctor,
-    title: "Healthcare Department",
-    github:
-      "https://github.com/sagartiwary/ashamed-rainstorm-9299/tree/main/hospital-expertise",
-    live_Link: "https://helthcarehopital.vercel.app/",
+    logo: gadget,
+    title: "Gadget 360",
+    github: "https://github.com/ShivaSingh17121997/comfortable-desk-7514",
+    live_Link: "https://64ed593dafb399042b1550e0--bright-malasada-d8835c.netlify.app/",
     description:
-      "This project is an online platform for consulting with doctors and making appointments in a healthcare hospital. The platform is built with React, Redux, JSON Server, Chakra UI, CSS, HTML, and JavaScript.",
-    techStack: [
-      {
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-        link: "https://react.dev",
-      },
-      {
-        image:
-          "https://dgdeepon.github.io/static/media/chakra-ui_title2-400x400-removebg-preview.fc0f93596462cd01a157.png",
-        link: "https://chakra-ui.com",
-      },
-      {
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
-        link: "https://redux.js.org",
-      },
-      {
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      },
-    ],
-  },
-  {
-    logo: Github,
-    title: "Github-Search",
-    github: "https://github.com/sagartiwary/Github-Users",
-    live_Link: "https://github-pi-two.vercel.app/",
-    description:
-      "GitHub is a web-based platform used for version control and collaboration in software development projects.",
+      "it is mobile comparing website where you can compare various mobile related comparisons, and eletronics item are present for comparison , it is built on javaScript , react, and CSS",
 
     techStack: [
       {
@@ -108,12 +109,12 @@ const projectsArray = [
     ],
   },
   {
-    logo: India,
-    title: "India's Bridal",
-    github: "https://github.com/sagartiwary/sore-sugar-4125",
-    live_Link: "https://roaring-kulfi-2481fd.netlify.app/",
+    logo: Student,
+    title: "Student Help Desk",
+    github: "https://github.com/ShivaSingh17121997/actual-shoes-7533-shiva",
+    live_Link: "https://64edbbac8e967a42357e3021--effulgent-pegasus-2bd9ca.netlify.app/",
     description:
-      "David's Bridal is a clothier in the United States that specializes in wedding dresses, prom gowns, and other formal wear. It is the largest American bridal-store chain.",
+      " Welcome to the StudentHelpDesk Platform! This platform allows users to create, share, and study flashcards on various subjects. Whether you're a student looking to ace your exams or someone who enjoys learning new things, this platform is designed to help you achieve your goals.",
     techStack: [
       {
         image:
