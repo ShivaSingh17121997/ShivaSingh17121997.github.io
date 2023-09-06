@@ -39,8 +39,8 @@ export const About = () => {
                 Full Stack Web Development (Full Time)
                 <br />
                 Aug,2022 - Present <br />
-                Jamshedpur, Jharkhand <br />
-                Bachelor of Science (B.Sc) Aug,2018 - Oct,2021
+                Lucknow, Uttar Pradesh <br />
+                Masters in Science (M.Sc) Aug,2021 - Oct,2022
               </Text>
             </Box>
             <Box width={{ base: "200px", sm: "350px", md: "430px" }} m="5px">
