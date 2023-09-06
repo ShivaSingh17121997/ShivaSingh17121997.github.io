@@ -51,7 +51,7 @@ export default function Navbar() {
         >
           <IconButton
             size={"md"}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon bg="white" />}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
@@ -100,12 +100,12 @@ export default function Navbar() {
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: "none" }}>
+          <Box pb={4} bg="white" display={{ md: "none"}}>
             <Stack as={"nav"} spacing={4}>
               {Links.map(({ title, href }) => (
                 <Link
                   px={2}
-                  color={"#fff"}
+                  color={"black"}
                   py={1}
                   rounded={"md"}
                   _hover={{
@@ -126,3 +126,4 @@ export default function Navbar() {
     </Box>
   );
 }
+
