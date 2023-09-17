@@ -96,7 +96,7 @@ export default function Contact() {
           <form action="https://formspree.io/f/mzbqkdzq" method="POST">
             <InputGroup>
               <InputLeftElement children={<FontAwesomeIcon icon={faUser} />} />
-              <Input
+              {/* <Input
                 name="name"
                 // border={0}
                 border={"1px solid #fff"}
@@ -106,13 +106,13 @@ export default function Contact() {
                 _focus={{ boxShadow: "none" }}
                 isRequired
                 margin="5px"
-              />
+              /> */}
             </InputGroup>
             <InputGroup>
               <InputLeftElement
                 children={<FontAwesomeIcon icon={faEnvelope} />}
               />
-              <Input
+              {/* <Input
                 name="email"
                 type="email"
                 color="#B0BEC5"
@@ -123,13 +123,13 @@ export default function Contact() {
                 _focus={{ boxShadow: "none" }}
                 isRequired
                 margin="5px"
-              />
+              /> */}
             </InputGroup>
             <InputGroup>
               <InputLeftElement
                 children={<FontAwesomeIcon icon={faPhoneVolume} />}
               />
-              <Input
+              {/* <Input
                 color="#B0BEC5"
                 name="number"
                 type="number"
@@ -139,13 +139,13 @@ export default function Contact() {
                 _focus={{ boxShadow: "none" }}
                 isRequired
                 margin="5px"
-              />
+              /> */}
             </InputGroup>
             <InputGroup>
               <InputLeftElement
                 children={<FontAwesomeIcon icon={faMessage} />}
               />
-              <Textarea
+              {/* <Textarea
                 isRequired
                 name="message"
                 color="#B0BEC5"
@@ -156,9 +156,9 @@ export default function Contact() {
                 placeholder="Message"
                 _focus={{ boxShadow: "none" }}
                 margin="5px"
-              />
+              /> */}
             </InputGroup>
-            <Button
+            {/* <Button
               type="submit"
               width={"100%"}
               mt={2}
@@ -172,7 +172,7 @@ export default function Contact() {
             position="relative"
             >
               Send Message
-            </Button>
+            </Button> */}
           </form>
         </Stack>
       </Flex>

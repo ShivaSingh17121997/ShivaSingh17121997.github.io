@@ -9,7 +9,7 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import Resume from "../Resume/Shiva-Singh-Resume.pdf"
+import Resume from "../Resume/Shiva-Singh-Resume.pdf";
 
 const Links = [
   { title: "Home", href: "#home", class: "nav-link home" },
@@ -18,16 +18,16 @@ const Links = [
   { title: "Project", href: "#projects", class: "nav-link projects" },
   { title: "Contact", href: "#contact", class: "nav-link contact" },
 ];
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = Resume;
-    link.download = "Shiva-Singh-Resume(3).pdf";
-    link.click();
-    window.open(
-      "https://drive.google.com/file/d/1-bhndjKZyvpuQs6T9AICGmyZ801jiiXM/view?usp=drive_link",
-      "_blank"
-    );
-  };
+const handleDownload = () => {
+  const link = document.createElement("a");
+  link.href = Resume;
+  link.download = "Shiva-Singh-Resume(3).pdf";
+  link.click();
+  window.open(
+    "https://drive.google.com/file/d/1-bhndjKZyvpuQs6T9AICGmyZ801jiiXM/view?usp=drive_link",
+    "_blank"
+  );
+};
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -40,7 +40,7 @@ export default function Navbar() {
         position={"fixed"}
         w={"100%"}
         zIndex={1}
-        h="75px"
+        h={isOpen ? "auto" : "75px"}
         top={0}
         borderBottom={"1px solid yellow"}
       >
@@ -66,7 +66,7 @@ export default function Navbar() {
                 <Link
                   px={2}
                   fontSize={"20px"}
-                  color={"#fff"}
+                  color={"#dedcdc"}
                   py={1}
                   rounded={"md"}
                   _hover={{
@@ -100,12 +100,12 @@ export default function Navbar() {
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} bg="white" display={{ md: "none"}}>
+          <Box pb={4} bg="black" display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map(({ title, href }) => (
                 <Link
                   px={2}
-                  color={"black"}
+                  color={"white"}
                   py={1}
                   rounded={"md"}
                   _hover={{
@@ -122,8 +122,7 @@ export default function Navbar() {
         ) : null}
       </Box>
 
-      <Box p={4}>content</Box>
+      <Box p={isOpen ? "75px" : "0"}>content</Box>
     </Box>
   );
 }
-
