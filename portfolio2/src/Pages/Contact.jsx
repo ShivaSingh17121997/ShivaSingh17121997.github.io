@@ -26,7 +26,7 @@ import {
 
 export default function Contact() {
   return (
-    <Box id="contact" pb={["20px", "50px", "100px"]}>
+    <Box id="contact" border={"2px  white"} position={"relative"} maxWidth={"600px"} mx={"auto"} pb={["20px", "50px", "100px"]}>
       <Center
         fontSize={40}
         color="yellow"
@@ -43,60 +43,61 @@ export default function Contact() {
           Reach Out to me!
         </Heading>
       </Center>
-      <Flex
-        justifyContent={"center"}
-        gap={20}
-        flexWrap={"wrap"}
-        position="relative"
-      >
-        <Stack fontSize={"20px"} mt={2} spacing={3}>
-          <HStack>
-            <TagLeftIcon
-              boxSize="15px"
-              children={<FontAwesomeIcon icon={faPhoneVolume} />}
-            />
-            <Text color="white" id="contact-phone">+91- 7379484942</Text>
-          </HStack>
-          <HStack>
-            <TagLeftIcon
-              boxSize="15px"
-              children={<FontAwesomeIcon icon={faEnvelope} />}
-            />
-            <Text id="contact-email" color="white">shivasingh001997@gmail.com</Text>
-          </HStack>
-          <HStack>
-            <TagLeftIcon
-              boxSize="15px"
-              children={<FontAwesomeIcon icon={faLocationDot} />}
-            />
-            <Text color="white">Lucknow, Uttar Pradesh</Text>
-          </HStack>
-          <HStack spacing={4}>
-            <Box width={"30px"} postion="relative">
-              <Link id="contact-linkedin" href="https://www.linkedin.com/in/shiva-singh-39b31b20b/">
-                <Image
-                  width={"100%"}
-                  src="https://cdn-icons-png.flaticon.com/512/2504/2504923.png"
-                  alt="linkedin"
-                />
-              </Link>
-            </Box>
-            <Box width={"30px"}>
-              <Link  id="contact-github" href="https://github.com/ShivaSingh17121997">
-                <Image
-                  width={"100%"}
-                  src="https://cdn-icons-png.flaticon.com/512/270/270798.png"
-                  
-                />
-              </Link>
-            </Box>
-          </HStack>
-        </Stack>
-        <Stack spacing={2} width={["85%", "90%", "25%"]}>
-          <form action="https://formspree.io/f/mzbqkdzq" method="POST">
-            <InputGroup>
-              <InputLeftElement children={<FontAwesomeIcon icon={faUser} />} />
-              {/* <Input
+      <Center>
+        <Flex
+          justifyContent={"center"}
+          gap={20}
+          flexWrap={"wrap"}
+          position="relative"
+        >
+          <Stack fontSize={"20px"} mt={2} spacing={3}>
+            <HStack>
+              <TagLeftIcon
+                boxSize="15px"
+                children={<FontAwesomeIcon color="white" icon={faPhoneVolume} />}
+              />
+              <Text alignItems={"center"} color="white" id="contact-phone">+91- 7379484942</Text>
+            </HStack>
+            <HStack>
+              <TagLeftIcon
+                boxSize="15px"
+                children={<FontAwesomeIcon color="white" icon={faEnvelope} />}
+              />
+              <Text id="contact-email" color="white">shivasingh001997@gmail.com</Text>
+            </HStack>
+            <HStack>
+              <TagLeftIcon
+                boxSize="15px"
+                children={<FontAwesomeIcon color="white" icon={faLocationDot} />}
+              />
+              <Text color="white">Lucknow, Uttar Pradesh</Text>
+            </HStack>
+            <HStack spacing={4}>
+              <Box width={"30px"} postion="relative">
+                <Link id="contact-linkedin" href="https://www.linkedin.com/in/shiva-singh-39b31b20b/">
+                  <Image
+                    width={"100%"}
+                    src="https://cdn-icons-png.flaticon.com/512/2504/2504923.png"
+                    alt="linkedin"
+                  />
+                </Link>
+              </Box>
+              <Box width={"30px"}>
+                <Link id="contact-github" href="https://github.com/ShivaSingh17121997">
+                  <Image
+                    width={"100%"}
+                    src="https://cdn-icons-png.flaticon.com/512/270/270798.png"
+
+                  />
+                </Link>
+              </Box>
+            </HStack>
+          </Stack>
+          <Stack spacing={2} width={["85%", "90%", "25%"]}>
+            <form action="https://formspree.io/f/mzbqkdzq" method="POST">
+              <InputGroup>
+                <InputLeftElement children={<FontAwesomeIcon icon={faUser} />} />
+                {/* <Input
                 name="name"
                 // border={0}
                 border={"1px solid #fff"}
@@ -107,12 +108,12 @@ export default function Contact() {
                 isRequired
                 margin="5px"
               /> */}
-            </InputGroup>
-            <InputGroup>
-              <InputLeftElement
-                children={<FontAwesomeIcon icon={faEnvelope} />}
-              />
-              {/* <Input
+              </InputGroup>
+              <InputGroup>
+                <InputLeftElement
+                  children={<FontAwesomeIcon icon={faEnvelope} />}
+                />
+                {/* <Input
                 name="email"
                 type="email"
                 color="#B0BEC5"
@@ -124,12 +125,12 @@ export default function Contact() {
                 isRequired
                 margin="5px"
               /> */}
-            </InputGroup>
-            <InputGroup>
-              <InputLeftElement
-                children={<FontAwesomeIcon icon={faPhoneVolume} />}
-              />
-              {/* <Input
+              </InputGroup>
+              <InputGroup>
+                <InputLeftElement
+                  children={<FontAwesomeIcon icon={faPhoneVolume} />}
+                />
+                {/* <Input
                 color="#B0BEC5"
                 name="number"
                 type="number"
@@ -140,12 +141,12 @@ export default function Contact() {
                 isRequired
                 margin="5px"
               /> */}
-            </InputGroup>
-            <InputGroup>
-              <InputLeftElement
-                children={<FontAwesomeIcon icon={faMessage} />}
-              />
-              {/* <Textarea
+              </InputGroup>
+              <InputGroup>
+                <InputLeftElement
+                  children={<FontAwesomeIcon icon={faMessage} />}
+                />
+                {/* <Textarea
                 isRequired
                 name="message"
                 color="#B0BEC5"
@@ -157,8 +158,8 @@ export default function Contact() {
                 _focus={{ boxShadow: "none" }}
                 margin="5px"
               /> */}
-            </InputGroup>
-            {/* <Button
+              </InputGroup>
+              {/* <Button
               type="submit"
               width={"100%"}
               mt={2}
@@ -173,9 +174,10 @@ export default function Contact() {
             >
               Send Message
             </Button> */}
-          </form>
-        </Stack>
-      </Flex>
+            </form>
+          </Stack>
+        </Flex>
+      </Center>
     </Box>
   );
 }
