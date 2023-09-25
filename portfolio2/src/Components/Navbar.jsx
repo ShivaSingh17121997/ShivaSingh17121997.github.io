@@ -29,8 +29,16 @@ const handleDownload = () => {
   );
 };
 
+
+
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const handleLinkClick = () => {
+    if (isOpen) {
+      onClose();
+    }
+  };
 
   return (
     <Box id="nav-menu">
@@ -113,6 +121,8 @@ export default function Navbar() {
                     color: "#4299E1",
                   }}
                   href={href}
+
+                  onClick={handleLinkClick}
                 >
                   {title}
                 </Link>
