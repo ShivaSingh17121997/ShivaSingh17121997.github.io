@@ -24,7 +24,7 @@ const handleDownload = () => {
     link.download = "Shiva-Singh-Resume(3).pdf";
     link.click();
     window.open(
-      "https://drive.google.com/file/d/1-bhndjKZyvpuQs6T9AICGmyZ801jiiXM/view?usp=drive_link",
+      "https://drive.google.com/file/d/12N-xmGWO9UFiNNofHToZXzIz3OgAhpJp/view?usp=sharing",
       "_blank"
     );
   };
